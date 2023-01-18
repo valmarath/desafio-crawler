@@ -4,8 +4,9 @@ Neste repositório encontra-se minha interpretação do [desafio de crawler](htt
 
 Consegui realizar grande parte dos entregáveis do desafio, de acordo com minha interpretação, deixando pendente apenas a parte de dockerizar a aplicação e incluir a funcionalidade de agendamento de execução. 
 
-
 ### Antes de Rodar o desafio:
+O arquivo principal onde foi realizado todo o desenvolvimento do desafio é o [crawler_gabriel_valmarath.py](https://github.com/valmarath/desafio-crawler/blob/main/crawler_gabriel_valmarath.py)
+
 Para que seja possível testar a aplicação, as seguintes `bibliotecas` deverão ser instaladas de antemão:
 
 - Requests
