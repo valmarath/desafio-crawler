@@ -1,50 +1,26 @@
-# beeMôn:
+# Desafio crawler
 
-Na beeMôn criamos muitos sistemas de raspagem de dados e buscamos todos os dias inovação na analise dos dados. Este desafio esta aberto para todos que quiserem abrir um fork e submeter suas ideias de tecnologia.
+Neste repositório encontra-se minha interpretação do [desafio de crawler](https://github.com/beemontech/desafio-crawler) proposto pela beeMôn.
 
-## Desafio:
-Escolher uma dos sites abaixo para fazer o desafio
-
-- [quotes.toscrape](https://quotes.toscrape.com/)
-- [imdb.com](https://www.imdb.com/chart/top/?ref_=nv_mv_250)
-
-### Minimo Entregável:
-
-- Buscar dados de forma automatizada(script de linha de comando ou interface clicavel)
-- Padronizar os retornos de forma estruturada (json/csv)
-- Sistema de logs de para acompanhamento da execução
-- Ter um prova da consulta (Screenshot)
-
-### Pontos Extra para:
-
-- Armazenamento dos resultados em um banco relacional ou não relacional
-- fazer um dataframe que possibilite visualizar os resultados via pandas
-- Trazer resultados de forma dinamica sem fixar caminhos no `xpath`
-- Dockerizar a aplicação
-- Conseguir agendar uma execução para um dia e horario.
-
-### Libs sugeridas:
-
- - Selenium 
- - Scrapy
- - Pandas
- - Requests
- - BeautifulSoup 
+Consegui realizar grande parte dos entregáveis do desafio, de acordo com minha interpretação, deixando pendente apenas a parte de dockerizar a aplicação e incluir a funcionalidade de agendamento de execução. 
 
 
-### O que iremos avaliar:
+### Antes de Rodar o desafio:
+Para que seja possível testar a aplicação, as seguintes `bibliotecas` deverão ser instaladas de antemão:
 
-- Conhecimento em HTML
-- Conhecimento em fluxo de request/response
-- Conhecimento em extração de dados
-- Conhecimento em base64
-- Boas práticas de programação
-- Utilização de bibliotecas de terceiros
-- Documentação
-- Criatividade
-- Cobertura de testes
-- Tempo de execução do código
-- Versionamento do código
+- Requests
+- BeautifulSoup
+- Pandas
+- Pymongo
+- Json
+- Selenium
+- Pillow
 
+Também é importante ter o `mongoDB` instalado e rodando no momento de testar a aplicação.
 
+### Para testar o resultado:
+
+Para testar os resultados efetivamente, basta executar o arquivo via interface do seu editor de código, ou pelo terminal, através do comando `python crawler_gabriel_valmarath.py`.
+
+Os resultados esperados,  conforme descritos nos entregáveis do desafio original, irão aparecer no console do editor de código. Também será criado um arquivo chamado `consulta.png`, o qual diz respeito a prova de consulta solicitada. Será criado, conjuntamente, um arquivo chamado `imdbMovies.csv` com os resultados do crawling. Os mesmos dados serão inseridos no seu banco de dados `mongoDB` (database: desafioCrawler, collection: imdbMovies).
 
